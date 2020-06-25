@@ -5,9 +5,12 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import java.net.URL?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="20" >
-
+    <stylesheets>
+        <URL value="@/css/style"/>
+    </stylesheets>
     <Button text = "Send message" onAction="#clickButton" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
     <TextField fx:id="textField" promptText="Input text" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
     <TextArea fx:id = "textArea" GridPane.columnIndex="0" GridPane.rowIndex="0" prefWidth="600" prefHeight="300"/>
